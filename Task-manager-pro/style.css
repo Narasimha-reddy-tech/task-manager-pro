@@ -1,0 +1,89 @@
+/* Global Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Header and Section Titles */
+h3 {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+/* Completed Task Styling */
+.task-completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Task Card Styling */
+.task-card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Priority Badge Colors */
+.badge-low {
+  background-color: #198754; /* Bootstrap green */
+}
+
+.badge-medium {
+  background-color: #ffc107; /* Bootstrap yellow */
+  color: #212529;
+}
+
+.badge-high {
+  background-color: #dc3545; /* Bootstrap red */
+}
+
+/* Highlight Tasks Due Soon */
+.due-soon {
+  border-left: 6px solid #fd7e14;
+  background-color: #fff3cd;
+  padding-left: 16px;
+}
+
+/* Form & Button Styles */
+form .form-control,
+form .form-select {
+  border-radius: 0.5rem;
+}
+
+form button {
+  border-radius: 0.5rem;
+}
+
+/* Toast Styling */
+.toast-container {
+  z-index: 1050;
+}
+
+.toast {
+  border-radius: 0.5rem;
+}
+
+/* Responsive Card Layout */
+@media (max-width: 768px) {
+  .task-card {
+    margin-bottom: 1rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.95rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+
