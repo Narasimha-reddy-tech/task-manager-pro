@@ -48,7 +48,7 @@ function renderTasks() {
     if (task.dueDate) {
       const due = new Date(task.dueDate);
       const now = new Date();
-      if (due.setHours(0,0,0,0) < now.setHours(0,0,0,0)) return false;
+      if (due.setHours(0, 0, 0, 0) < now.setHours(0, 0, 0, 0)) return false;
     }
     return true;
   });
